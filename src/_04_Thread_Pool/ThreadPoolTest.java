@@ -33,8 +33,7 @@ public class ThreadPoolTest {
 		
 		for(int i = 0; i < count; i++){
 			int x = i * count;
-			tp.addTask(()->{
-				for(int j = 0; j < count; j++){
+			tp.addTask(() ->{for(int j = 0; j < count; j++){
 					chars[x + j] = Character.toUpperCase(chars[x + j]);
 				}
 			});
