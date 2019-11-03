@@ -8,6 +8,7 @@ package _05_Synchronized_Swimming;
  * the static takeTurn() method in SynchronizedSwimming.
  */
 public class Swimmer extends Thread {
+	SynchronizedSwimming s = new SynchronizedSwimming();
 	public final String name;
 
 	public Swimmer(String name) {
@@ -17,5 +18,6 @@ public class Swimmer extends Thread {
 	@Override
 	public void run() {
 		// ...
+		
 	}
 }
